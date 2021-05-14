@@ -1,3 +1,25 @@
+/*
+            Handle menu transition
+            ----------------------
+
+            Add event listener to menu class,
+            toggle target classes with change class
+            for sliding menu.
+
+
+*/
+
+document.querySelector('.menu').addEventListener
+('click', ()=> {
+    document.querySelectorAll('.target').forEach((item) => {
+        item.classList.toggle('change')
+    })
+})
+
+
+//---------------------------------------------
+
+
 const icons = document.querySelectorAll('.icons img');
 let i = 1;
 
@@ -14,6 +36,11 @@ setInterval(()=> {
     }
 }
 , 4000);
+
+
+//---------------------------------------
+
+
 
 document.querySelector('.btn.dinner').addEventListener('click', ()=> {
     document.querySelectorAll('.dinner-target').forEach((item) => {

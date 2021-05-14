@@ -5,16 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valley Restaurant & Bar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+     <!-- Navigation -->
+     <div class="navbar target">
+        <div class="navbar-icons">
+           
+                <a href="#home" class=menu-icon>
+                    <i class="fas fa-home"></i>
+                        <span class="icon-name">Home</span>
+                </a>
+                <a href="#menu" class=menu-icon>
+                    <i class="fas fa-book-open"></i>
+                        <span class="icon-name">Menu</span>
+                </a>
+                <a href="#gallery" class=menu-icon>
+                    <i class="fas fa-images"></i>
+                        <span class="icon-name">Gallery</span>
+                </a>
+                
+                <a href="#footer" class=menu-icon>
+                    <i class="fas fa-phone-square-alt"></i>
+                        <span class="icon-name">Contact</span>
+                </a>
+           
+        </div>
+
+        
+    </div>
+    <div class="menu target"></div>
+    <!-- End of Navigation-->
     <!-- Section 1 -->
     
-    <section class="section-1">
+    <section class="section-1" id="home">
         <div class="section-1__container">
+            
             <h1 class="section-1__header">Valley Restaurant <br><span class="header-span">&</span><br>Bar</h1>
+            
             <p class="header__sub-text">Coming to you in September, 2021.</p>
             <div class="icons">
                 <img src="images/hero-images/pizza.png" alt="gallery-image of pizza" class="icon change">
@@ -31,7 +62,7 @@
 <!-- End of Section 1 -->
 
 <!-- Section 2 -->
-<section class="section-2">
+<section class="section-2" id="menu">
     <h2 class="section-2__heading">Preview our Menu</h2>
     <div class="card__container">
         <div class="card">
@@ -52,9 +83,9 @@
     </div>
     
    
-    <div class="clearfix ">
+    <div class="clearfix "></div>
     <div class="menu__container dinner-target">
-        <!-- The Close Button -->
+        
       
         <!-- Modal Content  -->
         <div class="dinner-menu">
@@ -136,35 +167,36 @@
 <!-- End of Section 2 -->
 
 <!-- Section 3-->
-<section class="section-3">
+<section class="section-3" id="gallery">
     <h1 class="section-3__heading">gallery</h1>
     <div class="gallery">
-        <a href="#" class="gallery-link" title="Food Info">
+        <a href="#gallery" class="gallery-link" title="Food Info">
             <img src="images/gallery-images/gallery-img-1.jpg" class="food-img">
-            <h3 class="food-name">Pizza</h3>
+            <h3 class="food-name">Pizza</h3> 
+
             <p class="food-description">A baked dish originating in Italy, which consists of a flat, round, crispy leavened dough covered with a layer of sauce and a layer of one or more toppings, such as meat, seafood, vegetables, and fruit, which is often topped with a layer of cheese</p>
         </a>
-        <a href="#" class="gallery-link" title="Food Info">
+        <a href="#gallery" class="gallery-link" title="Food Info">
             <img src="images/gallery-images/gallery-img-2.jpg" class="food-img">
             <h3 class="food-name">Cheese Steak</h3>
             <p class="food-description">Our unique Valley Cheesesteak is a sandwich made with super thinly sliced ribeye steak, caramelized onion, and provolone cheese. That simple combination is the original classic as made popular on the East Coast</p>
         </a>
-        <a href="#" class="gallery-link" title="Food Info">
+        <a href="#gallery" class="gallery-link" title="Food Info">
             <img src="images/gallery-images/gallery-img-3.jpg" class="food-img">
             <h3 class="food-name">Cheeseburger</h3>
             <p class="food-description">Two classic cheeseburgers with red onion and pickles on sesame buns on a wooden serving board</p>
         </a>
-        <a href="#" class="gallery-link" title="Food Info">
+        <a href="#gallery" class="gallery-link" title="Food Info">
             <img src="images/gallery-images/gallery-img-4.jpg" class="food-img">
             <h3 class="food-name">Seafood Medley</h3>
             <p class="food-description">A colorful rice dish bursting with clams, mussels and shrimp</p>
         </a>
-        <a href="#" class="gallery-link" title="Food Info">
+        <a href="#gallery" class="gallery-link" title="Food Info">
             <img src="images/gallery-images/gallery-img-5.jpg" class="food-img">
             <h3 class="food-name">Caesar Salad</h3>
             <p class="food-description">A green salad of romaine lettuce and croutons dressed with lemon juice (or lime juice), olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper</p>
         </a>
-        <a href="#" class="gallery-link" title="Food Info">
+        <a href="#gallery" class="gallery-link" title="Food Info">
             <img src="images/gallery-images/gallery-img-6.jpg" class="food-img">
             <h3 class="food-name">Cupcakes</h3>
             <p class="food-description">This chocolate cupcake is sweet and light, but the cherry almond frosting is lick-your-lips cherrylicious.</p>
@@ -174,6 +206,30 @@
 <!-- End of Section 3-->
 
 
+
+    <!-- Section 4 -->
+    <section class="section-4" id="footer">
+        <div class="section-4__text">
+            <h2 class="section-4__heading">JOIN  OUR NEWSLETTER!</h2>
+            <p class="section-4__paragraph">Receive an alert when we're open.</p>
+            </div>
+            <form class="signup__form">
+                <input type="text" class="signup-form__input" placeholder="Enter your Email">
+                <button type="submit" class="signup-form__btn">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                
+            </form>
+     
+<p class="copyright">
+    ValleyGallery &copy;
+</p>
+
+
+    </section>
+
+
         <script src="script.js"></script>
+       
 </body>
 </html>
